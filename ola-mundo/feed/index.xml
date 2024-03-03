@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Olá, mundo!	</title>
-	<atom:link href="https://lauraeisaias.github.io/ola-mundo/feed/" rel="self" type="application/rss+xml" />
-	<link>https://lauraeisaias.github.io/ola-mundo/</link>
+	<atom:link href="https://lauraisaias.us/ola-mundo/feed/" rel="self" type="application/rss+xml" />
+	<link>https://lauraisaias.us/ola-mundo/</link>
 	<description>Prepare-se para uma aventura com a gente!</description>
 	<lastBuildDate>Thu, 25 Jan 2024 21:06:14 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,7 +20,7 @@
 	<item>
 		<title>
 		By: Um comentarista do WordPress		</title>
-		<link>https://lauraeisaias.github.io/ola-mundo/#comment-1</link>
+		<link>https://lauraisaias.us/ola-mundo/#comment-1</link>
 
 		<dc:creator><![CDATA[Um comentarista do WordPress]]></dc:creator>
 		<pubDate>Thu, 25 Jan 2024 21:06:14 +0000</pubDate>
