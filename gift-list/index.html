@@ -221,7 +221,7 @@ function updateValue(title,valorUSD){
 function getGiftText(title, priceBRL,priceCOL,priceUSD, priceEUR, priceUK,description,nameGift){
 	var tt="<br/>";
 	tt=tt + "<div style='text-align:center;'><b>"+description+"<\/b><br/><b>Thank you for helping us in this important step of our lives!<\/b><\/div><br/>";
-	tt = tt + '<br/><i>The expected cost to furnish our '+nameGift+' is around USD '+priceUSD+'<\/i>. Please use the slider below to see the conversion between currencies and aid how much you want to contribute ❤️ <br/><div style="text-align:center; padding: 20px;">USD 10 <input type="range" min="10" max="500" value="100" class="slider" id="myRange" oninput="updateValue(\''+title+'\',this.value);" style="display:inline-block; vertical-align:middle; width:60%;"> USD 500<\/div><p>Value chosen (today´s quotation): <span id="finalValue"><\/span><\/p><br/>'; 
+	tt = tt + '<br/><i>The expected cost to furnish our '+nameGift+' is around USD '+priceUSD+'<\/i>. Please use the slider below to see the conversion between currencies and aid how much you want to contribute ❤️ <br/><div style="text-align:center; padding: 20px;">USD 10 <input type="range" min="10" max="'+priceUSD+'" value="100" class="slider" id="myRange" oninput="updateValue(\''+title+'\',this.value);" style="display:inline-block; vertical-align:middle; width:60%;"> USD '+priceUSD+'<\/div><p>Value chosen (today´s quotation): <span id="finalValue"><\/span><\/p><br/>'; 
 
 	tt = tt + "<\/div>";
 	return tt;
@@ -396,8 +396,7 @@ function payStay(priceUSD){
 				</div>
 				<div class="elementor-element elementor-element-5a54b2c4 e-transform elementor-widget elementor-widget-heading" data-id="5a54b2c4" data-element_type="widget" data-settings="{&quot;_transform_scale_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">The <b>biggest gift is your presence</b> in our wedding! However, we bought a flat and you might want to aid with its <b>furnishiment.</b> If you want to contribute to make this dream happen, we listed some areas of the flat the we are working on and you can decide how to contribute. Depending where you are, you will find a different way to do it.
-<b>Many thanks!</b> </p>				</div>
+					<p class="elementor-heading-title elementor-size-default">The <b>biggest gift we could recieve is your presence</b> in our wedding! However, If you would like to gift us something else, we bought a flat and we are furnishing it<b>.</b> If you want to contribute to make this dream happen, we listed some areas of the flat that we are working on and you can decide how to contribute. <b>Many thanks!</b> </p>				</div>
 				</div>
 				</div>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-44f174e7 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="44f174e7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">

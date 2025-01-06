@@ -230,7 +230,7 @@ function updateValue(title,valorUSD){
 function getGiftText(title, priceBRL,priceCOL,priceUSD, priceEUR, priceUK,description,nameGift){
 	var tt="<br/>";
 	tt=tt + "<div style='text-align:center;'><b>"+description+"<\/b><br/><b>Thank you for helping us in this important step of our lives!<\/b><\/div><br/>";
-	tt = tt + '<br/><i>The expected cost to furnish our '+nameGift+' is around USD '+priceUSD+'<\/i>. Please use the slider below to see the conversion between currencies and aid how much you want to contribute ❤️ <br/><div style="text-align:center; padding: 20px;">USD 10 <input type="range" min="10" max="500" value="100" class="slider" id="myRange" oninput="updateValue(\''+title+'\',this.value);" style="display:inline-block; vertical-align:middle; width:60%;"> USD 500<\/div><p>Value chosen (today´s quotation): <span id="finalValue"><\/span><\/p><br/>'; 
+	tt = tt + '<br/><i>The expected cost to furnish our '+nameGift+' is around USD '+priceUSD+'<\/i>. Please use the slider below to see the conversion between currencies and aid how much you want to contribute ❤️ <br/><div style="text-align:center; padding: 20px;">USD 10 <input type="range" min="10" max="'+priceUSD+'" value="100" class="slider" id="myRange" oninput="updateValue(\''+title+'\',this.value);" style="display:inline-block; vertical-align:middle; width:60%;"> USD '+priceUSD+'<\/div><p>Value chosen (today´s quotation): <span id="finalValue"><\/span><\/p><br/>'; 
 
 	tt = tt + "<\/div>";
 	return tt;
