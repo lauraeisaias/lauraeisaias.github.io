@@ -137,10 +137,10 @@ async function copiarTexto(copiar){
 }
  function geraPayCOP(title, price){
 	var ttt = "You can make a direct transfer to Laura Bernal. Please use the following bank details:<br/><br/>";
-	ttt = ttt + "Name: Laura Bernal Vergara<br/>";
-	ttt = ttt + "Bank: Davivienda<br/>";
-	ttt = ttt + "Account: 008970342260 (ahorros)<br/>";
-	ttt = ttt + "Phone Number: 3148903427<br/>";
+	ttt = ttt + "<b>Name:<\/b> Laura Bernal Vergara<br/>";
+	ttt = ttt + "<b>Bank:<\/b> Davivienda<br/>";
+	ttt = ttt + "<b>Account:<\/b> 008970342260 (ahorros)<br/>";
+	ttt = ttt + "<b>Phone Number:<\/b> 3148903427<br/>";
 	ttt = ttt + "<br/><br/><br/>Again, thank you so much!<br/><br/>";
 	bootbox.dialog({
                                 title: "Bank Transfer - " + title,
@@ -160,11 +160,12 @@ async function copiarTexto(copiar){
 
 function geraPayEUR(title, priceEUR, priceGBP){
 	var ttt = "You can make a direct transfer to Laura Bernal (UK Account). Please use the following bank details:<br/><br/>";
-	ttt = ttt + "Name: Laura Bernal Vergara<br/>";
-	ttt = ttt + "Sort Code: 23-14-70<br/>";
-	ttt = ttt + "Account Number: 36498675<br/>";
-	ttt = ttt + "IBAN: GB92 TRWI 2314 7036 4986 75<br/>";
-	ttt = ttt + "Bank name and address: Wise Payments Limited<br/>56 Shoreditch High Street<br/>London, E1 6JJ, United Kingdom<br/>";
+	ttt = ttt + "<b>Name:<\/b> Laura Bernal Vergara<br/>";
+	ttt = ttt + "<b>Sort Code:<\/b> 23-14-70<br/>";
+	ttt = ttt + "<b>Account Number:<\/b> 36498675<br/>";
+	ttt = ttt + "<b>IBAN:<\/b> GB92 TRWI 2314 7036 4986 75<br/>";
+	ttt = ttt + "<b>SWIFT/BIC:<\/b> TRWIGB2LXXX<br/>";
+	ttt = ttt + "<b>Bank name and address:<\/b> Wise Payments Limited<br/>56 Shoreditch High Street<br/>London, E1 6JJ, United Kingdom<br/>";
 	ttt = ttt + "<br/><br/><br/>Again, thank you so much!<br/><br/>";
 	bootbox.dialog({
                                 title: "Bank Transfer - " + title,
